@@ -1,8 +1,7 @@
-
-
 window.onload = function () {
     getTime()
 }
+
 
 
 function getTime() {
@@ -43,7 +42,7 @@ function myFunction(x) {
     }, 1000);
   }
   
-  
+ 
    // Call listener function at run time
 // x.addListener(myFunction) // Attach listener function on state changes
   
@@ -573,8 +572,9 @@ function ComputerstartGame() {
 
     required();
     if (info1) {
-        
+        if (window.matchMedia("(max-width: 730px)").match) {
             document.getElementById("go").addEventListener("click", game);
+        }
         
         setCompetitor(document.form1.playercom.value + "   vs   " + "Computer")
         play = true;
