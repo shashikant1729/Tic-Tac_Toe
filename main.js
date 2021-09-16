@@ -373,9 +373,9 @@ function startGame() {
     
 
     if (info2) {
-        if (window.matchMedia("(max-width: 730px)").match) {
+        
             document.getElementById("go").addEventListener("click", game);
-        }
+        
         setCompetitor(document.form1.player1player.value + "   vs   " + document.form1.player2player.value)
         play = true;
         flage = true;
@@ -575,9 +575,9 @@ function ComputerstartGame() {
 
     required();
     if (info1) {
-        if (window.matchMedia("(max-width: 730px)").match) {
+        
             document.getElementById("go").addEventListener("click", game);
-        }
+        
         setCompetitor(document.form1.playercom.value + "   vs   " + "Computer")
         play = true;
         flage = true;
