@@ -3,9 +3,7 @@
 window.onload = function () {
     getTime()
 }
-window.onload = function () {
-    myFunction(window.matchMedia("(min-width: 730px)"))
-}
+
 
 function getTime() {
     var today = new Date();
