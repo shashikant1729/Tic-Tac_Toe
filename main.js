@@ -1,5 +1,5 @@
 
-var x = window.matchMedia("(max-width: 730px)")
+var x = window.matchMedia("(min-width: 730px)")
 window.onload = function () {
     getTime(),myFunction(x)
 }
