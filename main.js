@@ -1,9 +1,12 @@
 
-var x = window.matchMedia("(min-width: 730px)")
-window.onload = function () {
-    getTime(),myFunction(x)
-}
 
+window.onload = function () {
+    getTime()
+}
+window.onload = function () {
+    myFunction(x)
+}
+var x = window.matchMedia("(min-width: 730px)")
 function getTime() {
     var today = new Date();
     var h = today.getHours();
