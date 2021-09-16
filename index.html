@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <style src=""></style>
+    <!-- Latest compiled and minified CSS -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/644c074f76.js" crossorigin="anonymous"></script>
+
+    <title>Tic-Tac-Toe</title>
+</head>
+
+<body>
+    <div class="nav">
+        <h1 id="game">Tic-Tac-Toe</h1>
+        <div id="realTime"></div>
+    </div>
+
+    <div class="bottom">
+       
+        <button type="button" class="btn btn-outline-info home" onclick="home()" id="homebtn" >Home</button>
+        <button type="button" class="btn btn-outline-primary game" onclick="game()" id="gamebtn">Game</button>
+        <button type="button" class="btn btn-outline-info result" onclick="result()" id="resultbtn">Result</button>
+       
+        </div>
+
+    <div class="play">
+
+        <div class="left" id="left">
+            <div class="start">
+                <h2 style="color: blue;">Select Competitor</h2>
+                <div class="btn-group btn-group-toggle " data-toggle="buttons">
+
+                    <!-- <label class="btn btn-secondary active">
+              <input type="radio" name="options" id="option1" checked> Active
+            </label> -->
+                    <label class="btn btn-secondary">
+                        <input type="radio" name="options" id="option1" onclick="plyply()" value="Human"> Human
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input type="radio" name="options" id="option2" onclick="plycom()" value="Computer">
+                        Computer
+                    </label>
+                </div>
+            </div>
+
+            <div id="info">
+                <form id="myForm" name="form1">
+                </form>
+            </div>
+            <!-- <a href="#" id="link">Click Here</a>
+<iframe id="frame" src="https://mycollageinformation.000webhostapp.com/#" scrolling="yes"></iframe> -->
+
+
+        </div>
+
+        <div class="main" id="main">
+            <div id="competitor"></div>
+            <div id="message"></div>
+            <table class="shift">
+                <tr>
+                    <td class="Square" id="0" onclick="nextMove(this)"></td>
+                    <td class="Square" id="1" onclick="nextMove(this)"></td>
+                    <td class="Square" id="2" onclick="nextMove(this)"></td>
+                </tr>
+                <tr>
+                    <td class="Square" id="3" onclick="nextMove(this)"></td>
+                    <td class="Square" id="4" onclick="nextMove(this)"></td>
+                    <td class="Square" id="5" onclick="nextMove(this)"></td>
+                </tr>
+                <tr>
+                    <td class="Square" id="6" onclick="nextMove(this)"></td>
+                    <td class="Square" id="7" onclick="nextMove(this)"></td>
+                    <td class="Square" id="8" onclick="nextMove(this)"></td>
+                </tr>
+
+            </table>
+
+
+
+
+
+            <div class="container">
+                <!-- <button id="go" onclick="startGame()">Go</button> -->
+                <button id="resume" class="resume"><span class="sresume">
+                        Resume</span></button>
+                <button id="stop" class="stop"><span class="sstop">Stop</span></button>
+                <button id="reset" class="reset"><span class="sreset">Reset</span></button>
+
+
+
+            </div>
+        </div>
+
+
+        <div class="right" id="right">
+
+            <h3 class="result">Result</h3>
+            <h4>Timmer</h4>
+            <div id="timmer"></div>
+            <h4>Score</h4>
+            <div id="score"></div>
+            <h4>Winner</h4>
+            <div id="winner"></div>
+
+
+
+
+        </div>
+
+    </div>
+
+
+</body>
+<!-- <script>
+            document.getElementById('left').appendChild(
+              document.getElementById('main')
+            );
+          </script> -->
+<script src="/main.js"></script>
+
+</html>
