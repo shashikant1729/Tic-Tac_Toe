@@ -287,15 +287,13 @@ table tr td:hover {
     }
 
     #plyply {
-        padding-top: 6%;
+        padding-top: 0%;
         margin: 0% 12% 0% 12%;
     }
 
     .main,
     .right {
         display: none;
-
-
     }
 
     .home {
@@ -325,10 +323,18 @@ table tr td:hover {
         flex-direction: row;
         width: 100%;
     }
-
-}
-    @media only screen and (max-width: 730px){
-.main, .right {
+    .main, .right {
     display: none;
     width: 100%;
+    }
+    #myForm {
+        margin: 0% 12% 0% 12%;
+        /* text-align: center; */
+    }
+}
+ 
+    @media only screen and (min-width: 730px){
+.main, .right, .left {
+    display:block;
+    
 }}
