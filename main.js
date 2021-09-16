@@ -4,9 +4,9 @@ window.onload = function () {
     getTime()
 }
 window.onload = function () {
-    myFunction(x)
+    myFunction(window.matchMedia("(min-width: 730px)"))
 }
-var x = window.matchMedia("(min-width: 730px)")
+
 function getTime() {
     var today = new Date();
     var h = today.getHours();
@@ -40,6 +40,9 @@ function myFunction(x) {
         document.getElementById("main").style.display = "block";
         document.getElementById("right").style.display = "block";
     }
+    setTimeout(function () {
+        myFunction(window.matchMedia("(min-width: 730px)"))
+    }, 1000);
   }
   
   
