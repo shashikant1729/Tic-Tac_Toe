@@ -31,41 +31,10 @@ function css(e, styles) {
 }
 
 
-function myFunction(x) {
-    if (x.matches) { // If media query matches
-        document.getElementById("left").style.display = "block";
-        document.getElementById("main").style.display = "block";
-        document.getElementById("right").style.display = "block";
-    }
-    setTimeout(function () {
-        myFunction(window.matchMedia("(min-width: 730px)"))
-    }, 1000);
-  }
-  
- 
+
    // Call listener function at run time
 // x.addListener(myFunction) // Attach listener function on state changes
   
-
-
-function home() {
-    document.getElementById("left").style.display = "block";
-    document.getElementById("main").style.display = "none";
-    document.getElementById("right").style.display = "none";
-}
-function game() {
-    document.getElementById("left").style.display = "none";
-    document.getElementById("main").style.display = "block";
-    document.getElementById("right").style.display = "none";
-}
-function result() {
-    document.getElementById("left").style.display = "none";
-    document.getElementById("main").style.display = "none";
-    document.getElementById("right").style.display = "block";
-}
-
-
-
 
 
 var form = document.getElementById("myForm");
@@ -367,12 +336,11 @@ function startGame() {
     document.getElementById('timmer').innerHTML = " ";
 
     requiredplayer();
-    
+    var scroll = `<a href="#main" Style = "color:White">Play</a>`
+        document.getElementById("go").innerHTML = scroll;
 
     if (info2) {
-        if (window.matchMedia("(max-width: 730px)").match) {
-            document.getElementById("go").addEventListener("click", game);
-        }
+        
         setCompetitor(document.form1.player1player.value + "   vs   " + document.form1.player2player.value)
         play = true;
         flage = true;
@@ -571,11 +539,9 @@ function ComputerstartGame() {
     document.getElementById('timmer').innerHTML = " ";
 
     required();
+    var scroll = `<a href="#main" Style = "color:White">Play</a>`
+    document.getElementById("go").innerHTML = scroll;
     if (info1) {
-        if (window.matchMedia("(max-width: 730px)").match) {
-            document.getElementById("go").addEventListener("click", game);
-        }
-        
         setCompetitor(document.form1.playercom.value + "   vs   " + "Computer")
         play = true;
         flage = true;
